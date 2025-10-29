@@ -1,0 +1,165 @@
+/* === General Page Style === */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* === Header === */
+.site-header {
+    background-color: #007B83;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.head_logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo-link {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background: url('../src/مركز البركة.png') no-repeat center center;
+    background-size: cover; /* cover ensures it fills the circle nicely */
+    border-radius: 50%; /* makes it circular */
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional: subtle shadow */
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+#textAfterLogo h1 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+/* === User Info + Buttons === */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-btn {
+    background: #ffffff20;
+    align-content: center;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between icon and text */
+    background-color: #e74c3c; /* red button */
+    color: white;
+    border: none;
+    border-radius: 8px; /* rounded corners */
+    padding: 10px 20px; /* vertical and horizontal padding */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn i {
+    font-size: 1.2rem; /* icon size */
+}
+
+.logout-btn:hover {
+    background-color: #c0392b; /* darker red on hover */
+    transform: translateY(-2px); /* subtle lift effect */
+}
+
+.logout-btn:active {
+    transform: translateY(0);
+}
+
+
+/* === Main Layout === */
+main {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    padding: 2rem;
+}
+
+/* === Sidebar Buttons Centered === */
+.btnBar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.btnBar a {
+    text-decoration: none;
+}
+
+.minu_btn {
+    width: 100%;
+    background: #007B83;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.minu_btn i {
+    margin-left: 10px;
+}
+
+.minu_btn:hover {
+    background: #005b5f;
+    transform: translateY(-2px);
+}

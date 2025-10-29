@@ -1,0 +1,94 @@
+*{
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+.head_logo{
+    width: 100%;
+    height: 120px;
+    background-color: aliceblue;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+#textAfterLogo{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.143);
+}
+#logo{
+    height: 100px; ;
+    width: 100px;
+    background-color: black;
+    background-image: url(../src/مركز\ البركة.png);
+    background-size: cover;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+#place{
+    position: absolute;
+    right: 0px;
+    height: fit-content;
+    width: fit-content;
+    background-color: blue;
+    margin: 20px;
+    margin-right: -10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    color: white;
+    border-radius: 20px 0px 0px 20px ;
+
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background: #ccf8ee;
+  /* direction: rtl; */
+}
+
+.container {
+  padding: 20px;
+}
+
+/* زر تسجيل الخروج */
+.logout-btn {
+  background: #00aaff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  float: left;
+  font-size: 14px;
+  margin-right: 100px;
+}
+
+/* القائمة الرئيسية */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 250px;
+  margin: 20px;
+  margin-left: 100px;
+  padding-left: 200px;
+  margin: 5px;
+}
+
+/* أزرار القائمة */
+.menu-btn {
+  background: #bdf4b9;
+  border: 1px solid #8fd98f;
+  border-radius: 20px;
+  padding: 12px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  margin: 5pxs;
+
+}

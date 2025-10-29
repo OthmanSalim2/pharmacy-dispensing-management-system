@@ -1,0 +1,79 @@
+
+*{
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+.head_logo{
+    width: 100%;
+    height: 120px;
+    background-color: aliceblue;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+#textAfterLogo{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.143);
+}
+#logo{
+    height: 100px; ;
+    width: 100px;
+    background-color: black;
+    background-image: url(../src/مركز\ البركة.png);
+    background-size: cover;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+#place{
+    position: absolute;
+    right: 0px;
+    height: fit-content;
+    width: fit-content;
+    background-color: blue;
+    margin: 20px;
+    margin-right: -10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    color: white;
+    border-radius: 20px 0px 0px 20px ;
+
+}
+#bodyArea{
+    width: 100%;
+    height: 74dvb;
+    display: flex;
+    flex-direction: row;
+    background-color: #D1FFEE;
+}
+#logout{
+    height:fit-content ;
+    background-color: blue;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 20px;
+}
+.wirhbtn{
+    width: 100%;
+    background-color:#C8FCAF ;
+    padding:1px 10px;
+    margin: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    justify-items: center;
+}
+div a{
+    width: 100%;
+    
+}
+
+#btnContainer{
+    position: relative;
+    left: 30%;
+    top: 50px;
+
+}

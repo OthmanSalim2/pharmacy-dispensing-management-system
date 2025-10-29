@@ -1,0 +1,217 @@
+/* ========== RESET / BASIC ========== */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Cairo", system-ui, sans-serif;
+    background: #ccf8ee;
+    color: #0b2b2a;
+    direction: rtl;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+    background: #1b4965;
+    color: #fff;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.head_logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #000;
+    background-image: url('../src/مركز البركة.png');
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+#textAfterLogo h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+/* ========== USER + LOGOUT AREA ========== */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.user-name,
+.logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px; /* same height */
+    border-radius: 8px;
+    gap: 8px;
+    font-weight: 600;
+}
+
+/* user name */
+.user-name {
+    font-size: 17px;
+    color: #dff6ff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0 16px;
+}
+
+/* logout button */
+.logout-btn {
+    background: linear-gradient(135deg, #e63946, #d62839);
+    color: #fff;
+    font-size: 15px;
+    padding: 0 18px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, #d62d39, #b91f2f);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.logout-btn:active {
+    transform: scale(0.96);
+}
+
+/* ========== MAIN WRAPPER ========== */
+.main-wrapper {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 0 16px;
+}
+
+/* BOXES GRID */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+/* EACH BOX */
+.box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 14px rgba(9, 30, 34, 0.06);
+    transition: transform .18s ease, box-shadow .18s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 13px;
+}
+
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(9, 30, 34, 0.08);
+}
+
+.box h3 {
+    margin: 0 0 12px 0;
+    color: #1b4965;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* BUTTON GROUP INSIDE BOX */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* PROFESSIONAL BUTTON STYLE */
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(27, 73, 101, 0.2);
+}
+
+.action-btn i {
+    font-size: 18px;
+}
+
+.action-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #219150, #27ae60);
+    box-shadow: 0 6px 14px rgba(27, 73, 101, 0.25);
+}
+
+.action-btn:active {
+    transform: scale(0.97);
+    background: linear-gradient(135deg, #1b7f42, #219150);
+    box-shadow: 0 2px 6px rgba(27, 73, 101, 0.15);
+}
+
+/* make anchor tags full-width clickable */
+.btn-group a {
+    display: block;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 480px) {
+    #textAfterLogo h1 {
+        font-size: 16px;
+    }
+
+    .action-btn {
+        font-size: 15px;
+        padding: 10px 16px;
+    }
+
+    .user-name {
+        font-size: 15px;
+        padding: 0 12px;
+        height: 38px;
+    }
+
+    .logout-btn {
+        font-size: 14px;
+        padding: 0 12px;
+        height: 38px;
+    }
+}

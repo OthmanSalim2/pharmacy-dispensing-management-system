@@ -1,0 +1,170 @@
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+}
+
+body {
+    background: #ccf8ee;
+    direction: rtl;
+    color: #0b2b2a;
+}
+
+/* ===== HEADER ===== */
+.main-header {
+    background: #0b2b2a;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.clinic-name {
+    font-size: 1.4rem;
+}
+
+.page-title h2 {
+    color: #a8ffde;
+    font-size: 1.2rem;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.username i {
+    margin-left: 5px;
+}
+
+.logout-btn {
+    color: #fff;
+    background: #e63946;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c53034;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    padding: 30px;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* ===== NAV BUTTONS ===== */
+.nav-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.back-btn, .stock-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    background: #17a589;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-btn:hover, .stock-btn:hover {
+    background: #149074;
+}
+
+/* ===== FORM BOX ===== */
+.form-box {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h3 {
+    color: #0b2b2a;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    color: #0b2b2a;
+}
+
+input, select {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 1rem;
+}
+
+.units, .price-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.price-row input {
+    flex: 1;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-btn {
+    background: #17a589;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #149074;
+}

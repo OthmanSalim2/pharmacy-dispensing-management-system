@@ -1,0 +1,211 @@
+/* ======== GLOBAL STYLES ======== */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* ======== MAIN CONTAINER ======== */
+main.container {
+    width: 70%; /* changed from 90% to 70% */
+    max-width: 900px; /* optional: prevent it from getting too wide on large screens */
+    margin: 20px auto;
+    padding-bottom: 40px;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+    background-color: #ccf8ee;
+    color: #0b2b2a;
+    direction: rtl;
+}
+
+/* ======== HEADER ======== */
+header {
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 25px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 60px;
+    border-radius: 10px;
+}
+
+.site-title h1 {
+    margin: 0;
+    color: #00695c;
+    font-size: 20px;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.username {
+    font-weight: 600;
+}
+
+.logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+/* ======== BACK BUTTON ======== */
+.back-btn-container {
+    margin: 15px 30px;
+}
+
+.back-btn {
+    background: #00897b;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.back-btn:hover {
+    background: #00695c;
+}
+
+/* ======== PAGE TITLE ======== */
+.page-title {
+    text-align: center;
+    color: #00695c;
+    margin: 20px 0;
+}
+
+/* ======== ROSHTA CARD ======== */
+.roshta {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.roshta:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.roshta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00897b;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.roshta-header h3 {
+    margin: 0;
+    color: #00897b;
+}
+
+.roshta-number {
+    font-weight: bold;
+    color: #004d40;
+}
+
+/* ======== INPUTS ======== */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fafafa;
+    font-family: inherit;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    color: #00695c;
+    margin-bottom: 3px;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ======== STATUS ROW ======== */
+.status-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.status-tag {
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.status-pused {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-sarf {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-none {
+    background: #f8f9fa;
+    color: #6c757d;
+}
+
+/* ======== BUTTON ======== */
+.status-btn {
+    background: #00897b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.status-btn:hover {
+    background: #00695c;
+}
+
+/* ======== NO DATA ======== */
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+    color: #555;
+}

@@ -1,0 +1,364 @@
+/* ======================================
+   GLOBAL STYLES
+====================================== */
+* {
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+body {
+    background-color: #f1f7f5;
+    margin: 0;
+    color: #1a3a34;
+    direction: rtl;
+}
+
+/* ======================================
+   MAIN HEADER WITH LOGO & NAME
+====================================== */
+.main-header {
+    background: linear-gradient(90deg, #0a7668, #0f9d85);
+    color: #fff;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: cover;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.clinic-name {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+/* ======================================
+   TOP BAR (BACK + USER + LOGOUT)
+====================================== */
+.top-bar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #0a7668;
+    color: #0a7668;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.top-bar .left-side a {
+    color: #0a7668;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.top-bar .left-side a:hover {
+    color: #098d77;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    color: #0a7668;
+}
+
+.logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+/* ======================================
+   PAGE CONTAINER
+====================================== */
+.page-container {
+    padding: 35px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ======================================
+   FILTER BAR
+====================================== */
+.filter {
+    background: #fff;
+    padding: 18px 25px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.filter label {
+    font-weight: 700;
+    font-size: 16px;
+    color: #0a7668;
+}
+
+.filter input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.filter button {
+    background-color: #0a7668;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.filter button:hover {
+    background-color: #098d77;
+}
+
+/* ======================================
+   TABLE SECTIONS (ORDERS)
+====================================== */
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a7668;
+    border-bottom: 2px solid #0a7668;
+    padding-bottom: 8px;
+    font-size: 22px;
+}
+
+/* ======================================
+   TABLE STYLES
+====================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #0a7668;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+    background-color: #f8fbfa;
+    transition: 0.2s;
+}
+
+/* ======================================
+   BUTTONS
+====================================== */
+.accept-btn,
+.cancel-btn {
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    margin: 2px;
+    transition: 0.3s;
+}
+
+.accept-btn {
+    background-color: #27ae60;
+}
+
+.accept-btn:hover {
+    background-color: #219150;
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+}
+
+.cancel-btn:hover {
+    background-color: #c0392b;
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .filter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
+
+/* ======================================
+   USER ACTIONS (Username + Logout)
+====================================== */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+.user-actions:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.user-box i {
+    background: #ffffff;
+    color: #0a7668;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.user-box span {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+/* ===== Logout Button ===== */
+.logout-btn {
+    background: #fff;
+    color: #0a7668;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.logout-btn i {
+    color: #e74c3c;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.logout-btn:hover i {
+    color: #fff;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0b5345; /* Dark green */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.back-btn i {
+    font-size: 18px;
+}
+
+.back-btn:hover {
+    background-color: #117a65;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+

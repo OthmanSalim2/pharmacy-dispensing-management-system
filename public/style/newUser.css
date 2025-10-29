@@ -1,0 +1,338 @@
+/* === Global Reset === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Tajawal", sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #333;
+    direction: rtl;
+    line-height: 1.6;
+}
+
+/* === Header === */
+header.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #046380;
+    color: #fff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    gap: 10px;
+}
+
+.head_logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url('../src/مركز البركة.png'); /* Make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fff;
+}
+
+#textAfterLogo h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* === User Info === */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.user-info i {
+    font-size: 16px;
+    color: #ffeb3b;
+}
+
+.user-info:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+/* === Logout Button === */
+.logout-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn i {
+    font-size: 14px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* === Form Card === */
+.form {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 60px auto;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* === Form Fields === */
+.form label {
+    font-weight: 600;
+    color: #046380;
+    margin-bottom: 6px;
+}
+
+.form input,
+.form select {
+    padding: 12px 14px;
+    border: 1.8px solid #d0d7de;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form input:focus,
+.form select:focus {
+    border-color: #046380;
+    box-shadow: 0 0 6px rgba(4, 99, 128, 0.25);
+    background-color: #fff;
+}
+
+/* === Search Field === */
+.searchPlace {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.lableText {
+    font-weight: 600;
+    color: #046380;
+}
+
+/* === Buttons === */
+.btn,
+.back-btn {
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Action buttons */
+.btn {
+    background-color: #046380;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #034c60;
+    transform: translateY(-2px);
+}
+
+/* Back button */
+.back-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Button icons alignment */
+.btn i,
+.back-btn i {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Button group spacing */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+    header.site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+
+    .form {
+        width: 90%;
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+    .btn,
+    .back-btn,
+    .logout-btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+}
+
+/* === Select2 Custom Styling === */
+.select2-container {
+    direction: rtl;
+    width: 100% !important;
+    font-family: "Tajawal", sans-serif;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #f9fafc;
+    border: 2px solid #007b83;
+    border-radius: 10px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.select2-container--default .select2-selection--single:hover {
+    border-color: #00a3a3;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    left: 6px;
+    width: 25px;
+}
+
+.select2-dropdown {
+    background: #ffffff;
+    border: 1px solid #007b83;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.select2-results__option {
+    padding: 10px;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+.select2-results__option--highlighted {
+    background-color: #007b83 !important;
+    color: #fff !important;
+}
+
+.select2-search--dropdown {
+    padding: 8px;
+}
+
+.select2-search__field {
+    width: 100% !important;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    direction: rtl;
+}
+
+.select2-search__field:focus {
+    border-color: #007b83;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 131, 0.2);
+}
+
+/* === Label and Group Styling === */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #007b83;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+

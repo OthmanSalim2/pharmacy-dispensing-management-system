@@ -1,0 +1,156 @@
+/* ========== RESET / BASIC ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    text-decoration: none;
+}
+
+/* Body */
+body {
+    background: #ccf8ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+.site-header {
+    width: 100%;
+    background: #1b4965;
+    color: #fff;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.head_logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #000;
+    background-image: url('../src/مركز البركة.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#textAfterLogo h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Login wrapper */
+.login-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.login-form h2 {
+    color: #1b4965;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Input groups */
+.enterLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.enterLogin label {
+    font-weight: 600;
+    color: #1b4965;
+    font-size: 16px;
+    text-align: right;
+}
+
+.enterLogin input {
+    padding: 12px 14px;
+    border: 1px solid #8fd98f;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.enterLogin input:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.3);
+}
+
+/* Login Button */
+#loginbtn {
+    width: 100%;
+    padding: 14px 0;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(27, 73, 101, 0.2);
+}
+
+#loginbtn:hover {
+    background: linear-gradient(135deg, #219150, #27ae60);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(27, 73, 101, 0.25);
+}
+
+#loginbtn:active {
+    transform: scale(0.97);
+    background: linear-gradient(135deg, #1b7f42, #219150);
+    box-shadow: 0 2px 6px rgba(27, 73, 101, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-form {
+        padding: 24px 16px;
+    }
+
+    #textAfterLogo h1 {
+        font-size: 18px;
+    }
+
+    .enterLogin input {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    #loginbtn {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+}
