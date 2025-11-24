@@ -58,6 +58,11 @@ This Laravel-based web application helps pharmacists manage inventory, track pre
 
 ---
 
+## 🌍 Live Demo  
+🔗 **Online Link:** https://albarakamed.online/
+
+---
+
 ## ⚙️ Installation
 
 1. **Clone the repository**
